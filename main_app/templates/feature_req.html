@@ -21,7 +21,7 @@
               <label>Client</label>
               <select name="client" class="ui search dropdown" v-model="clientName">
                 <option v-for="client in clientNames" v-bind:value="client.id" :key="client.id">
-                  $[ client.name ]$ ($[ client.requests ]$)
+                  $[ client.name ]$
                 </option>
               </select>
             </div>
@@ -78,7 +78,7 @@
           {% if messages %}
           {% for category, message in messages %}
           <div class="ui {{category}} message" style="text-align: center;">
-              <div class="header"><i class="icon big {% if category == 'success' %}smile{% else %}frown{% endif %} outline"></i>{% if category == 'success' %}Successful{% else %}Error{% endif %}</div>
+              <div class="header">{% if category == 'success' %}Request logged succesfully *yippie* {% else %}There was an error please review your details{% endif %}</div>
               <p>{{ message }}</p>
           </div>
           {% endfor %}

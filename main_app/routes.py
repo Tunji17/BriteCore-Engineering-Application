@@ -29,8 +29,8 @@ def login():
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
-    if current_user.is_authenticated:
-        return redirect(url_for('Requests'))
+    # if current_user.is_authenticated:
+    #     return redirect(url_for('Requests'))
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -75,10 +75,10 @@ def Requests():
             data.append(new_request)
             db.session.add_all(data)
             db.session.commit()
-            flash('Request successfully recorded', 'success')
+            flash('successful', 'success')
             return redirect(url_for('Requests'))
         else:
-            flash('Oops!!! Something went wrong', 'error')
+            flash('Oops!!! error', 'error')
     return render_template('feature_req.html', request_form=request_form, clients=clients)
 
 @app.route('/get-request-data/')
