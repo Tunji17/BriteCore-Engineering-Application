@@ -21,8 +21,11 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(60), nullable=False)
 
 
-    def __repr__(self):
-        return f"User('{self.username}', '{self.email}')"
+     def __repr__(self):
+        return '<User %r>' % (self.username)
+
+    # def __repr__(self):
+    #     return f"User('{self.username}', '{self.email}')"
 
 class Client(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -30,7 +33,10 @@ class Client(db.Model):
     request = db.relationship('Request', backref='client', lazy='dynamic')
 
     def __repr__(self):
-       return f"<Client(name='{self.name}')>"
+        return '<Client %r>' % (self.name)
+
+    # def __repr__(self):
+    #    return f"<Client(name='{self.name}')>"
 
 
 class Request(db.Model):
@@ -44,4 +50,8 @@ class Request(db.Model):
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
 
     def __repr__(self):
-       return f"<Request(client='{self.client}', title='{self.title}', priority='{self.priority}')>"
+        return '<Request %r>' % (self.client)
+
+    # def __repr__(self):
+    #    return f"<Request(client='{self.client}', title='{self.title}', priority='{self.priority}')>"
+    
