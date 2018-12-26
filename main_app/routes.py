@@ -24,10 +24,10 @@ def login():
             return redirect(next_page) if next_page else redirect(url_for('Requests'))
         else:
             flash('You have previously unsuccessful login attempts', 'danger')
-<<<<<<< Updated upstream
-=======
+# <<<<<<< Updated upstream
+# =======
             return redirect(url_for('login'))
->>>>>>> Stashed changes
+# >>>>>>> Stashed changes
     return render_template('login.html', title='Login', form=form)
 
 
