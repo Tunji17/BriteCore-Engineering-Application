@@ -5,7 +5,7 @@ from datetime import date
 
 from main_app import app, db, models
 from main_app.models import User, Client, Request, ProductEnum
-from main_app import basedir
+from config.settings import basedir
 
 TEST_DB = 'test.db'
 class Test_main_app(unittest.TestCase):
@@ -33,7 +33,7 @@ class Test_main_app(unittest.TestCase):
                         'target_date': '2018-11-06',
                         'product': 'claims'
                     }
-        
+
         db.create_all()
 
 
