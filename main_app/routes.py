@@ -85,7 +85,7 @@ def Requests():
             flash('Oops!!! error', 'error')
     return render_template('feature_req.html', request_form=request_form, clients=clients)
 
-@app.route('/get-request-data/')
+@app.route('/getdata/')
 def get_request_data():
     clients = [{"id":x.id, "name":x.name, "requests": x.request.count()} for x in Client.query.all()]
     products = [[x.name, x.name.capitalize()] for x in ProductEnum]
