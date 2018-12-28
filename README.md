@@ -41,12 +41,13 @@ run tests by using this command at the projects root directory
     
 # Deployment and Tools
 The project was built using 
-Aws- Hosting Service
-Gunicorn - Python WSGI HTTP Server for UNIX
-Nginx - web server
-Flask - python web framework 
-Vue.js - javascript framework
-jquery - javascript framework
+
+    Aws- Hosting Service
+    Gunicorn - Python WSGI HTTP Server for UNIX
+    Nginx - web server
+    Flask - python web framework 
+    Vue.js - javascript framework
+    jquery - javascript framework
 
 # Live demo 
 
