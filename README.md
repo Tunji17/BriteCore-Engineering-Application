@@ -9,20 +9,22 @@ These are the environmental variables you need to have in order to get this proj
     Server Side Scripting:Python 3.6+
     Server Framework: Flask
     ORM: Sql-Alchemy
-    Depoly Tool: Fabric
-    
-   
     
 #Installing
 These are what you need to know to install this project 
  
     set up a virtual environment 
-    clone this repository or download the zip file
+    clone this repository
 To install all the dependencies run
  
     pip install -r requirements.txt
-Once dependencies are installed run
- 
+Once dependencies are installed migrate database with
+
+    flask db migrate 
+    flask db upgrade
+    
+Then run flask app
+
     python run.py 
  This gets your project started and you can view it at 
   
@@ -36,6 +38,19 @@ run tests by using this command at the projects root directory
 
     python -m unittest tests/Test_app.py
     
+    
+# Deployment and Tools
+The project was built using 
+Aws- Hosting Service
+Gunicorn - Python WSGI HTTP Server for UNIX
+Nginx - web server
+Flask - python web framework 
+Vue.js - javascript framework
+jquery - javascript framework
+
+# Live demo 
+
+http://52.15.87.199
     
     
     
