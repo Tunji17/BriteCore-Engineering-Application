@@ -5,7 +5,7 @@ key = 'TluxwB3fV_GWuLkR1_BzGs1Zk90TYAuhNMZP_0q4WyM='
 
 # Oh no! The code is going over the edge! What are you going to do?
 
-message = b'gAAAAABcIJiowp3R-qqNZaR4VCPmHe8L7_MvQDRtwl_foT4_m9taAZ0nQcQZD9xQ2fkLwGSA4d57aCVuOOn5x5VmqzavJnpSr1y_P7r_ZyV9-tYO3hMPGpqryxKD2Mp5JwgnU59E_uw0F-4STcYmSHMPi5a-5IuMwhmDc8cCrm_OjBE1egv47NB7FsS0UtQdo6vGCy7h7e8E'
+message = b'gAAAAABcPadEyTBcV4h_rAGRHydOxR5RJAcddbeNksaS5eLJeqhlbTDFRenO7y7IeQHbQhuMbcagVhHAaHj4Hw4y-M1YiILv14Tds4H45Cjq608fcqKUNHbUqrCvpBIiU6YvOqhnjed8625NLAxpb5qmS50GnqW7sZQf2f-b8MT62ZP_6D2CFkNVpnAMhz3ND3MHxjWMzk8_'
 
 def main():
     f = Fernet(key)
@@ -16,4 +16,4 @@ if __name__ == "__main__":
 
 
 
-# result = b'https://engineering-application.britecore.com/e/t24e118s11t/ImplementationEngineer'
+# result = b'https://engineering-application.britecore.com/e/t15e119s0t/ImplementationEngineer'
